@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>HTML Text-Related Tags — Examples (No CSS)</title>
+	</head>
+	<body>
+		<h1>HTML text-related tags — examples (no CSS)</h1>
+
+		<p>This page demonstrates common HTML tags for handling text content. There is no CSS here — only semantic HTML.</p>
+
+		<hr />
+
+		<h2>Headings</h2>
+		<h1>h1: Main heading</h1>
+		<h2>h2: Section heading</h2>
+		<h3>h3: Subsection heading</h3>
+		<h4>h4: Sub-subsection heading</h4>
+		<h5>h5: Smaller heading</h5>
+		<h6>h6: Smallest heading</h6>
+
+		<hr />
+
+		<h2>Paragraphs, line breaks, and thematic breaks</h2>
+		<p>p: A paragraph of text. Paragraphs are block-level and separated by default spacing.</p>
+		<p>
+			br: A line break<br />
+			causes the text to continue on the next line.
+		</p>
+		<p>hr: A thematic break is shown above and below using the hr tag.</p>
+		<p>
+			wbr: A suggested line break in long words like Supercalifragilisticexpiali<wbr />docious allows wrapping
+			opportunities without inserting visible characters.
+		</p>
+
+		<hr />
+
+		<h2>Inline emphasis and importance</h2>
+		<p>
+			em: <em>emphasized</em> text usually conveys stress emphasis; nested <em>em within <em>em</em></em> increases emphasis.
+		</p>
+		<p>
+			strong: <strong>strong importance</strong> indicates strong importance or seriousness.
+		</p>
+		<p>
+			i: <i>idiomatic text</i> for alternate voice, technical terms, or thoughts.
+		</p>
+		<p>
+			b: <b>keyword or lead-in</b> for attention without implying extra importance.
+		</p>
+		<p>
+			u: <u>non-textual annotation</u> (e.g., proper name in Chinese, misspelling) — not generic underline.
+		</p>
+		<p>
+			s: <s>no longer accurate</s> text for content that is no longer relevant.
+		</p>
+		<p>
+			mark: Highlight with <mark>mark</mark> to denote relevance.
+		</p>
+		<p>
+			small: <small>small print</small> for side comments or legalese.
+		</p>
+
+		<hr />
+
+		<h2>Edits</h2>
+		<p>
+			ins/del: We <del cite="https://example.com/change-log" datetime="2024-01-02">removed this phrase</del>
+			and <ins cite="https://example.com/change-log" datetime="2024-01-03">added this one</ins>.
+		</p>
+
+		<hr />
+
+		<h2>Quotations and citations</h2>
+		<p>q: Inline quotation — as the author said, <q cite="https://example.com/quote">less is more</q>.</p>
+		<blockquote cite="https://www.example.com/source">
+			blockquote: A longer quotation can be set apart in a block.
+			<footer>
+				— Source titled <cite>Design Basics</cite>
+			</footer>
+		</blockquote>
+
+		<hr />
+
+		<h2>Code and computer text</h2>
+		<p>code: Inline <code>console.log("hello")</code> within a sentence.</p>
+		<p>kbd: User input like <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+		<p>samp: Sample output: <samp>Operation completed successfully.</samp></p>
+		<p>var: Variables like <var>x</var> and <var>y</var>.</p>
+		<pre>
+pre: Preformatted text preserves
+line breaks and    spaces.
+		</pre>
+
+		<hr />
+
+		<h2>Subscripts and superscripts</h2>
+		<p>
+			H<sub>2</sub>O, and Einstein's equation E = mc<sup>2</sup>.
+		</p>
+
+		<hr />
+
+		<h2>Vocabulary, terms, and references</h2>
+		<p>
+			dfn: The term <dfn id="def-algorithm">algorithm</dfn> is a set of instructions to solve a problem.
+		</p>
+		<p>
+			abbr: <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+		</p>
+		<p>
+			cite: Citing a work like <cite>The Pragmatic Programmer</cite>.
+		</p>
+		<p>
+			time: The event starts at <time datetime="2025-12-31T23:59:00">11:59 PM on New Year's Eve</time>.
+		</p>
+		<p>
+			data: Product ID <data value="SKU-12345">SKU‑12345</data> can be machine-readable.
+		</p>
+
+		<hr />
+
+		<h2>Bidirectional text</h2>
+		<p>bdi: Isolated name: <bdi>إيان</bdi> appears correctly within English text.</p>
+		<p>bdo: Overridden direction: <bdo dir="rtl">abc 123</bdo>.</p>
+
+		<hr />
+
+		<h2>Ruby annotations (for East Asian typography)</h2>
+		<p>
+			<ruby>
+				東<rt>とう</rt> 京<rt>きょう</rt>
+				<rp>(</rp><rt>Tokyo</rt><rp>)</rp>
+			</ruby>
+		</p>
+
+		<hr />
+
+		<h2>Links and spans</h2>
+		<p>
+			a: Visit <a href="https://example.com"  target="_blank" rel="noopener">example.com</a>.
+		</p>
+		<p>
+			span: A generic <span>inline span</span> with no inherent meaning.
+		</p>
+
+		<hr />
+
+		<h2>Lists</h2>
+		<h3>Unordered list (ul/li)</h3>
+		<ul>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ul>
+
+		<h3>Ordered list (ol/li)</h3>
+		<ol>
+			<li>Step one</li>
+			<li>Step two</li>
+			<li>Step three</li>
+		</ol>
+
+		<h3>Description list (dl/dt/dd)</h3>
+		<dl>
+			<dt>HTML</dt>
+			<dd>Markup language for the web.</dd>
+			<dt>CSS</dt>
+			<dd>Style sheet language.</dd>
+			<dt>JavaScript</dt>
+			<dd>Programming language of the web.</dd>
+		</dl>
+
+		<hr />
+
+		<h2>Address and figure captions</h2>
+		<address>
+			Written by <a href="mailto:author@example.com">author@example.com</a><br />
+			123 Web Street<br />
+			Internet City
+		</address>
+
+		<figure>
+			<figcaption>figcaption: A caption for an associated figure or example.</figcaption>
+		</figure>
+
+		<hr />
+
+		<h2>Notes</h2>
+		<p>
+			This page intentionally includes only semantic HTML tags for text and basic structure. No CSS or inline styles are used.
+			Obsolete presentational tags such as <code>font</code>, <code>center</code>, <code>big</code>, and <code>tt</code> are omitted.
+		</p>
+
+		<hr />
+
+		<h2>Additional text-related tags (obsolete/non-standard)</h2>
+		<p>
+			The following elements are obsolete or non-standard. They are shown for historical reference only — do not use them in new content.
+			Some may still render in browsers but are non-conforming in modern HTML.
+		</p>
+
+		<h3>Presentational (obsolete)</h3>
+		<p>big: <big>enlarged text (obsolete)</big></p>
+		<p>tt: <tt>teletype/monospace (obsolete)</tt></p>
+		<p>strike: <strike>struck-through (obsolete)</strike></p>
+		<p>
+			font: <font>font element (obsolete; presentational)</font>
+			<!-- Intentionally no color/size/face attributes to avoid styling -->
+		</p>
+		<p>center: <center>centered text (obsolete)</center></p>
+
+		<h3>Legacy inline semantics</h3>
+		<p>
+			acronym: <acronym title="As Soon As Possible">ASAP</acronym> (obsolete; use <code>abbr</code>)
+		</p>
+		<p>
+			nobr: <nobr>This text should not break into a new line in legacy behavior.</nobr> (obsolete)
+		</p>
+
+		<h3>Non-standard (proprietary)</h3>
+		<p>
+			blink: <blink>This text was intended to blink (not supported in modern browsers).</blink>
+		</p>
+		<p>
+			marquee: <marquee behavior="scroll" direction="left" scrollamount="3">Scrolling text (non-standard)</marquee>
+		</p>
+
+		<p>
+			Not shown due to breaking document parsing but included in the summary table: <code>xmp</code>, <code>listing</code>, and <code>plaintext</code>
+			(all obsolete and non-conforming; they change how the HTML parser treats the rest of the document).
+		</p>
+
+		<hr />
+
+		<h2>Summary table — text-related elements</h2>
+		<p>This table lists modern and obsolete text-related tags with their purpose. Use modern elements; avoid obsolete/non-standard ones.</p>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Tag</th>
+					<th>Category</th>
+					<th>Purpose / Typical Use</th>
+					<th>Status / Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>h1–h6</td><td>Structure</td><td>Headings, section titles</td><td>Modern</td></tr>
+				<tr><td>p</td><td>Structure</td><td>Paragraph of text</td><td>Modern</td></tr>
+				<tr><td>br</td><td>Inline</td><td>Line break</td><td>Modern</td></tr>
+				<tr><td>wbr</td><td>Inline</td><td>Optional word break opportunity</td><td>Modern</td></tr>
+				<tr><td>hr</td><td>Structure</td><td>Thematic break between paragraphs</td><td>Modern</td></tr>
+				<tr><td>pre</td><td>Structure</td><td>Preformatted text; preserves whitespace</td><td>Modern</td></tr>
+				<tr><td>address</td><td>Structure</td><td>Contact information for a document or section</td><td>Modern</td></tr>
+				<tr><td>a</td><td>Inline</td><td>Hyperlink</td><td>Modern</td></tr>
+				<tr><td>span</td><td>Inline</td><td>Generic inline container</td><td>Modern</td></tr>
+				<tr><td>em</td><td>Inline</td><td>Stress emphasis</td><td>Modern</td></tr>
+				<tr><td>strong</td><td>Inline</td><td>Strong importance</td><td>Modern</td></tr>
+				<tr><td>i</td><td>Inline</td><td>Alternate voice/idiomatic</td><td>Modern</td></tr>
+				<tr><td>b</td><td>Inline</td><td>Attention without importance (keywords)</td><td>Modern</td></tr>
+				<tr><td>u</td><td>Inline</td><td>Non-textual annotation</td><td>Modern</td></tr>
+				<tr><td>s</td><td>Inline</td><td>No longer accurate content</td><td>Modern</td></tr>
+				<tr><td>mark</td><td>Inline</td><td>Marked/highlighted for relevance</td><td>Modern</td></tr>
+				<tr><td>small</td><td>Inline</td><td>Small print, side comments</td><td>Modern</td></tr>
+				<tr><td>ins</td><td>Edit</td><td>Inserted text</td><td>Modern</td></tr>
+				<tr><td>del</td><td>Edit</td><td>Deleted text</td><td>Modern</td></tr>
+				<tr><td>q</td><td>Quote</td><td>Inline quotation</td><td>Modern</td></tr>
+				<tr><td>blockquote</td><td>Quote</td><td>Block quotation</td><td>Modern</td></tr>
+				<tr><td>cite</td><td>Quote</td><td>Title of a work</td><td>Modern</td></tr>
+				<tr><td>code</td><td>Computer</td><td>Code fragment</td><td>Modern</td></tr>
+				<tr><td>kbd</td><td>Computer</td><td>User input (keyboard)</td><td>Modern</td></tr>
+				<tr><td>samp</td><td>Computer</td><td>Sample output</td><td>Modern</td></tr>
+				<tr><td>var</td><td>Computer</td><td>Variable</td><td>Modern</td></tr>
+				<tr><td>sub</td><td>Inline</td><td>Subscript</td><td>Modern</td></tr>
+				<tr><td>sup</td><td>Inline</td><td>Superscript</td><td>Modern</td></tr>
+				<tr><td>dfn</td><td>Inline</td><td>Defining instance of a term</td><td>Modern</td></tr>
+				<tr><td>abbr</td><td>Inline</td><td>Abbreviation/acronym (with title)</td><td>Modern</td></tr>
+				<tr><td>time</td><td>Inline</td><td>Machine-readable date/time</td><td>Modern</td></tr>
+				<tr><td>data</td><td>Inline</td><td>Value associated with inline content</td><td>Modern</td></tr>
+				<tr><td>bdi</td><td>Bidi</td><td>Bidirectional isolation</td><td>Modern</td></tr>
+				<tr><td>bdo</td><td>Bidi</td><td>Bidirectional override</td><td>Modern</td></tr>
+				<tr><td>ruby</td><td>Ruby</td><td>Ruby annotation container</td><td>Modern</td></tr>
+				<tr><td>rt</td><td>Ruby</td><td>Ruby text (annotation)</td><td>Modern</td></tr>
+				<tr><td>rp</td><td>Ruby</td><td>Fallback parentheses for ruby</td><td>Modern</td></tr>
+				<tr><td>ul, ol, li</td><td>List</td><td>Unordered/ordered lists and items</td><td>Modern</td></tr>
+				<tr><td>dl, dt, dd</td><td>List</td><td>Description list, term, definition</td><td>Modern</td></tr>
+				<tr><td>figure, figcaption</td><td>Structure</td><td>Figure and its caption</td><td>Modern</td></tr>
+				<tr><td>big</td><td>Presentational</td><td>Increase font size</td><td>Obsolete</td></tr>
+				<tr><td>tt</td><td>Presentational</td><td>Teletype/monospace</td><td>Obsolete</td></tr>
+				<tr><td>strike</td><td>Presentational</td><td>Strike-through text</td><td>Obsolete (use <code>s</code> or <code>del</code>)</td></tr>
+				<tr><td>font</td><td>Presentational</td><td>Font face/size/color</td><td>Obsolete (use CSS)</td></tr>
+				<tr><td>center</td><td>Presentational</td><td>Center alignment</td><td>Obsolete (use CSS)</td></tr>
+				<tr><td>acronym</td><td>Inline</td><td>Acronym</td><td>Obsolete (use <code>abbr</code>)</td></tr>
+				<tr><td>nobr</td><td>Presentational</td><td>No line break</td><td>Obsolete (use CSS <code>white-space</code>)</td></tr>
+				<tr><td>blink</td><td>Non-standard</td><td>Blinking text</td><td>Non-standard; unsupported</td></tr>
+				<tr><td>marquee</td><td>Non-standard</td><td>Scrolling text</td><td>Non-standard; avoid</td></tr>
+				<tr><td>xmp</td><td>Preformatted</td><td>Raw text (no parsing)</td><td>Obsolete; breaks parsing — not demonstrated</td></tr>
+				<tr><td>listing</td><td>Preformatted</td><td>Code listings</td><td>Obsolete; not demonstrated</td></tr>
+				<tr><td>plaintext</td><td>Preformatted</td><td>All following treated as plain text</td><td>Obsolete; breaks parsing — not demonstrated</td></tr>
+			</tbody>
+		</table>
+	</body>
+	</html>
+
