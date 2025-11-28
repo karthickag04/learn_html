@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first html design</title>
+    <link rel="shortcut icon" href="https://trymeyourself.com/images/TryMeYourSelf-logo-head.png" type="image/x-icon">
+    <style>
+        .red-bold-large {
+            color: red;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .blue-normal-weight {
+            color: blue;
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        #green-light {
+            color: green;
+            font-size: 28px;
+            font-weight: lighter;
+        }
+
+        .purple-italic {
+            color: purple;
+            font-size: 36px;
+            font-style: italic;
+        }
+
+        #orange-arial {
+            color: orange;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        .teal-courier {
+            color: teal;
+            font-family: 'Courier New', monospace;
+            font-size: 26px;
+        }
+
+        .brown-small-caps {
+            color: brown;
+            font-variant: small-caps;
+            font-size: 34px;
+        }
+
+        #navy-centered {
+            color: navy;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .crimson-right {
+            color: crimson;
+            text-align: right;
+            font-size: 32px;
+        }
+
+        #darkgreen-underline {
+            color: darkgreen;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .black-strikethrough {
+            color: black;
+            text-decoration: line-through;
+            font-size: 28px;
+        }
+
+        .indigo-overline {
+            color: indigo;
+            text-decoration: overline;
+            font-size: 32px;
+        }
+
+        #maroon-uppercase {
+            color: maroon;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        .darkblue-lowercase {
+            color: darkblue;
+            text-transform: lowercase;
+            font-size: 28px;
+        }
+
+        #darkred-capitalize {
+            color: darkred;
+            text-transform: capitalize;
+            font-size: 34px;
+        }
+
+        .chocolate-shadow {
+            color: chocolate;
+            text-shadow: 2px 2px 5px gray;
+            font-size: 36px;
+        }
+
+        .white-dark-bg {
+            color: white;
+            text-shadow: 3px 3px 8px black;
+            font-size: 40px;
+            background-color: darkslategray;
+        }
+
+        #gold-letter-spacing {
+            color: gold;
+            letter-spacing: 5px;
+            font-size: 32px;
+        }
+
+        .coral-tight-spacing {
+            color: coral;
+            letter-spacing: -1px;
+            font-size: 30px;
+        }
+
+        #darkviolet-word-spacing {
+            color: darkviolet;
+            word-spacing: 15px;
+            font-size: 28px;
+        }
+
+        .tomato-indent {
+            color: tomato;
+            text-indent: 50px;
+            font-size: 32px;
+        }
+
+        .steelblue-line-height {
+            color: steelblue;
+            line-height: 60px;
+            font-size: 34px;
+        }
+
+        #olive-yellow-bg {
+            color: olivedrab;
+            background-color: lightyellow;
+            font-size: 30px;
+        }
+
+        .white-black-padding {
+            color: white;
+            background-color: black;
+            font-size: 36px;
+            padding: 20px;
+        }
+
+        #darkslateblue-custom-padding {
+            color: darkslateblue;
+            background-color: lightcyan;
+            padding: 15px 30px;
+            font-size: 32px;
+        }
+
+        .firebrick-margin {
+            color: firebrick;
+            margin: 50px;
+            font-size: 34px;
+        }
+
+        .midnightblue-left-margin {
+            color: midnightblue;
+            margin-left: 100px;
+            font-size: 30px;
+        }
+
+        #darkorange-border {
+            color: darkorange;
+            border: 3px solid black;
+            font-size: 32px;
+        }
+
+        .darkmagenta-dashed {
+            color: darkmagenta;
+            border: 5px dashed purple;
+            padding: 10px;
+            font-size: 28px;
+        }
+
+        #seagreen-dotted {
+            color: seagreen;
+            border: 4px dotted green;
+            padding: 15px;
+            font-size: 30px;
+        }
+
+        .saddlebrown-bottom-border {
+            color: saddlebrown;
+            border-bottom: 5px solid brown;
+            font-size: 34px;
+        }
+
+        .royalblue-rounded {
+            color: royalblue;
+            border-radius: 15px;
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 32px;
+        }
+
+        #crimson-box-shadow {
+            color: crimson;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+            padding: 15px;
+            font-size: 30px;
+        }
+
+        .darkgoldenrod-opacity {
+            color: darkgoldenrod;
+            opacity: 0.7;
+            font-size: 36px;
+        }
+
+        #mediumseagreen-transparent {
+            color: mediumseagreen;
+            opacity: 0.5;
+            font-size: 34px;
+        }
+
+        .darkslategray-half-width {
+            color: darkslategray;
+            width: 50%;
+            background-color: lightgray;
+            font-size: 28px;
+        }
+
+        .peru-fixed-height {
+            color: peru;
+            height: 80px;
+            background-color: wheat;
+            line-height: 80px;
+            font-size: 32px;
+        }
+
+        #forestgreen-max-width {
+            color: forestgreen;
+            max-width: 400px;
+            background-color: lightgreen;
+            font-size: 30px;
+        }
+
+        .darkkhaki-min-height {
+            color: darkkhaki;
+            min-height: 100px;
+            background-color: khaki;
+            font-size: 28px;
+        }
+
+        #slateblue-wavy {
+            color: slateblue;
+            text-decoration: underline wavy red;
+            font-size: 34px;
+        }
+
+        .sienna-extra-bold {
+            color: sienna;
+            font-weight: 900;
+            font-size: 38px;
+        }
+
+        .mediumblue-thin {
+            color: mediumblue;
+            font-weight: 100;
+            font-size: 32px;
+        }
+
+        #darkturquoise-georgia {
+            color: darkturquoise;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 30px;
+        }
+
+        .orangered-gradient {
+            color: orangered;
+            background: linear-gradient(to right, yellow, orange);
+            padding: 20px;
+            font-size: 34px;
+        }
+
+        #white-purple-centered {
+            color: white;
+            background-color: purple;
+            text-align: center;
+            padding: 25px;
+            font-size: 36px;
+        }
+
+        .darkgreen-left-border {
+            color: darkgreen;
+            border-left: 10px solid green;
+            padding-left: 20px;
+            font-size: 32px;
+        }
+
+        .mediumvioletred-shadows {
+            color: mediumvioletred;
+            text-shadow: 1px 1px 2px pink, 0 0 25px pink;
+            font-size: 38px;
+        }
+
+        #teal-spaced-uppercase {
+            color: teal;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-size: 28px;
+        }
+
+        .darkred-rounded-box {
+            color: darkred;
+            background-color: mistyrose;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            font-size: 34px;
+        }
+
+        #navy-times-bold {
+            color: navy;
+            font-family: 'Times New Roman', serif;
+            font-size: 42px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 3px 3px 5px lightblue;
+        }
+
+        .darkslateblue-nowrap {
+            color: darkslateblue;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 32px;
+        }
+
+        .crimson-pre-space {
+            color: crimson;
+            white-space: pre;
+            font-size: 28px;
+        }
+
+        #green-rtl {
+            color: green;
+            direction: rtl;
+            font-size: 34px;
+        }
+
+        .brown-bidi {
+            color: brown;
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            font-size: 30px;
+        }
+
+        #darkgray-stretch {
+            color: darkgray;
+            font-stretch: expanded;
+            font-size: 32px;
+        }
+
+        .mediumorchid-yellow-underline {
+            color: mediumorchid;
+            text-decoration-color: yellow;
+            text-decoration-line: underline;
+            font-size: 36px;
+        }
+
+        .darkslategray-double-line {
+            color: darkslategray;
+            text-decoration-line: underline overline;
+            font-size: 30px;
+        }
+
+        #teal-dotted-underline {
+            color: teal;
+            text-decoration: underline dotted red;
+            font-size: 34px;
+        }
+
+        .darkblue-pointer {
+            color: darkblue;
+            cursor: pointer;
+            font-size: 32px;
+        }
+
+        #green-help-cursor {
+            color: green;
+            cursor: help;
+            font-size: 30px;
+        }
+
+        .purple-visible {
+            color: purple;
+            visibility: visible;
+            font-size: 36px;
+        }
+
+        .darkred-overflow {
+            color: darkred;
+            overflow: visible;
+            font-size: 32px;
+        }
+
+        #blue-scroll-x {
+            color: blue;
+            overflow-x: scroll;
+            width: 200px;
+            white-space: nowrap;
+            font-size: 28px;
+        }
+
+        .darkgreen-overflow-y {
+            color: darkgreen;
+            overflow-y: hidden;
+            height: 50px;
+            font-size: 34px;
+        }
+
+        #maroon-relative-top {
+            color: maroon;
+            position: relative;
+            top: 20px;
+            font-size: 30px;
+        }
+
+        .navy-relative-left {
+            color: navy;
+            position: relative;
+            left: 50px;
+            font-size: 32px;
+        }
+
+        .darkorange-relative-right {
+            color: darkorange;
+            position: relative;
+            right: 30px;
+            font-size: 28px;
+        }
+
+        #darkviolet-relative-bottom {
+            color: darkviolet;
+            position: relative;
+            bottom: 10px;
+            font-size: 34px;
+        }
+
+        .steelblue-zindex {
+            color: steelblue;
+            z-index: 10;
+            position: relative;
+            font-size: 30px;
+        }
+
+        #crimson-float {
+            color: crimson;
+            float: left;
+            width: 50%;
+            font-size: 32px;
+        }
+
+        .teal-clear {
+            color: teal;
+            clear: both;
+            font-size: 28px;
+        }
+
+        .darkgoldenrod-blur {
+            color: darkgoldenrod;
+            filter: blur(1px);
+            font-size: 36px;
+        }
+
+        #blue-brightness {
+            color: blue;
+            filter: brightness(1.5);
+            font-size: 32px;
+        }
+
+        .green-contrast {
+            color: green;
+            filter: contrast(2);
+            font-size: 30px;
+        }
+
+        #red-grayscale {
+            color: red;
+            filter: grayscale(80%);
+            font-size: 34px;
+        }
+
+        .purple-hue-rotate {
+            color: purple;
+            filter: hue-rotate(90deg);
+            font-size: 32px;
+        }
+
+        .darkorange-invert {
+            color: darkorange;
+            filter: invert(50%);
+            font-size: 28px;
+        }
+
+        #navy-saturate {
+            color: navy;
+            filter: saturate(3);
+            font-size: 36px;
+        }
+
+        .darkgreen-sepia {
+            color: darkgreen;
+            filter: sepia(70%);
+            font-size: 30px;
+        }
+
+        #crimson-drop-shadow {
+            color: crimson;
+            filter: drop-shadow(5px 5px 10px black);
+            font-size: 34px;
+        }
+
+        .teal-rotate {
+            color: teal;
+            transform: rotate(2deg);
+            font-size: 32px;
+        }
+
+        .purple-scale {
+            color: purple;
+            transform: scale(1.2);
+            font-size: 28px;
+        }
+
+        #darkblue-skew {
+            color: darkblue;
+            transform: skew(5deg, 2deg);
+            font-size: 30px;
+        }
+
+        .darkorange-translate-x {
+            color: darkorange;
+            transform: translateX(20px);
+            font-size: 32px;
+        }
+
+        #darkmagenta-translate-y {
+            color: darkmagenta;
+            transform: translateY(-10px);
+            font-size: 28px;
+        }
+
+        .forestgreen-transform-origin {
+            color: forestgreen;
+            transform-origin: left center;
+            transform: rotate(5deg);
+            font-size: 34px;
+        }
+
+        .maroon-transition {
+            color: maroon;
+            transition: all 0.3s ease;
+            font-size: 30px;
+        }
+
+        #darkslateblue-transition-duration {
+            color: darkslateblue;
+            transition-duration: 1s;
+            font-size: 32px;
+        }
+
+        .chocolate-transition-property {
+            color: chocolate;
+            transition-property: color;
+            font-size: 28px;
+        }
+
+        #steelblue-bg-lightblue {
+            color: steelblue;
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 34px;
+        }
+
+        .white-darkgreen-bg {
+            color: white;
+            background-color: darkgreen;
+            padding: 20px;
+            font-size: 32px;
+        }
+
+        .black-repeating-gradient {
+            color: black;
+            background: repeating-linear-gradient(45deg, yellow, yellow 10px, orange 10px, orange 20px);
+            font-size: 30px;
+        }
+
+        #white-bg-position {
+            color: white;
+            background-color: purple;
+            background-position: center;
+            padding: 15px;
+            font-size: 28px;
+        }
+
+        .darkred-bg-clip {
+            color: darkred;
+            background-color: pink;
+            background-clip: padding-box;
+            padding: 20px;
+            border: 5px dashed red;
+            font-size: 32px;
+        }
+
+        #navy-bg-attachment {
+            color: navy;
+            background-color: lightblue;
+            background-attachment: scroll;
+            font-size: 30px;
+        }
+
+        .darkgreen-bg-origin {
+            color: darkgreen;
+            background-color: lightgreen;
+            background-origin: border-box;
+            padding: 20px;
+            border: 5px solid green;
+            font-size: 34px;
+        }
+
+        .crimson-box-sizing {
+            color: crimson;
+            box-sizing: border-box;
+            width: 300px;
+            padding: 20px;
+            border: 5px solid red;
+            font-size: 28px;
+        }
+
+        #teal-mixed-borders {
+            color: teal;
+            border-top: 3px solid cyan;
+            border-right: 5px dashed blue;
+            border-bottom: 4px dotted green;
+            border-left: 6px double teal;
+            padding: 15px;
+            font-size: 32px;
+        }
+
+        .purple-individual-margins {
+            color: purple;
+            margin-top: 30px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 50px;
+            font-size: 30px;
+        }
+
+        #darkblue-individual-paddings {
+            color: darkblue;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            background-color: lightblue;
+            font-size: 34px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="red-bold-large">1. Red Bold Large Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="blue-normal-weight">2. Blue Normal Weight Heading</h1>
+<br><br><br><br><br>
+
+<h1 id="green-light">3. Green Light Weight Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="purple-italic">4. Purple Italic Heading</h1>
+<br><br><br><br><br>
+
+<h1 id="orange-arial">5. Orange Arial Font Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="teal-courier">6. Teal Courier Font Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="brown-small-caps">7. Brown Small Caps Heading</h1>
+<br><br><br><br><br>
+
+<h1 id="navy-centered">8. Navy Centered Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="crimson-right">9. Crimson Right Aligned Heading</h1>
+<br><br><br><br><br>
+
+<h1 id="darkgreen-underline">10. Dark Green Underlined Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="black-strikethrough">11. Black Strikethrough Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="indigo-overline">12. Indigo Overline Heading</h1>
+<br><br><br><br><br>
+
+<h1 id="maroon-uppercase">13. Maroon Uppercase Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="darkblue-lowercase">14. DARKBLUE LOWERCASE HEADING</h1>
+<br><br><br><br><br>
+
+<h1 id="darkred-capitalize">15. darkred capitalize heading</h1>
+<br><br><br><br><br>
+
+<h1 class="chocolate-shadow">16. Chocolate Shadow Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="white-dark-bg">17. White Shadow on Dark Background</h1>
+<br><br><br><br><br>
+
+<h1 id="gold-letter-spacing">18. Gold Wide Letter Spacing</h1>
+<br><br><br><br><br>
+
+<h1 class="coral-tight-spacing">19. Coral Tight Letter Spacing</h1>
+<br><br><br><br><br>
+
+<h1 id="darkviolet-word-spacing">20. Dark Violet Wide Word Spacing</h1>
+<br><br><br><br><br>
+
+<h1 class="tomato-indent">21. Tomato Indented Heading</h1>
+<br><br><br><br><br>
+
+<h1 class="steelblue-line-height">22. Steel Blue Tall Line Height</h1>
+<br><br><br><br><br>
+
+<h1 id="olive-yellow-bg">23. Olive on Light Yellow Background</h1>
+<br><br><br><br><br>
+
+<h1 class="white-black-padding">24. White on Black with Padding</h1>
+<br><br><br><br><br>
+
+<h1 id="darkslateblue-custom-padding">25. Dark Slate Blue Custom Padding</h1>
+<br><br><br><br><br>
+
+<h1 class="firebrick-margin">26. Firebrick with Large Margin</h1>
+<br><br><br><br><br>
+
+<h1 class="midnightblue-left-margin">27. Midnight Blue Left Margin</h1>
+<br><br><br><br><br>
+
+<h1 id="darkorange-border">28. Dark Orange with Border</h1>
+<br><br><br><br><br>
+
+<h1 class="darkmagenta-dashed">29. Dark Magenta Dashed Border</h1>
+<br><br><br><br><br>
+
+<h1 id="seagreen-dotted">30. Sea Green Dotted Border</h1>
+<br><br><br><br><br>
+
+<h1 class="saddlebrown-bottom-border">31. Saddle Brown Bottom Border</h1>
+<br><br><br><br><br>
+
+<h1 class="royalblue-rounded">32. Royal Blue Rounded Corners</h1>
+<br><br><br><br><br>
+
+<h1 id="crimson-box-shadow">33. Crimson with Box Shadow</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgoldenrod-opacity">34. Dark Goldenrod Semi Transparent</h1>
+<br><br><br><br><br>
+
+<h1 id="mediumseagreen-transparent">35. Medium Sea Green More Transparent</h1>
+<br><br><br><br><br>
+
+<h1 class="darkslategray-half-width">36. Dark Slate Gray Half Width</h1>
+<br><br><br><br><br>
+
+<h1 class="peru-fixed-height">37. Peru Fixed Height Centered</h1>
+<br><br><br><br><br>
+
+<h1 id="forestgreen-max-width">38. Forest Green Max Width</h1>
+<br><br><br><br><br>
+
+<h1 class="darkkhaki-min-height">39. Dark Khaki Min Height</h1>
+<br><br><br><br><br>
+
+<h1 id="slateblue-wavy">40. Slate Blue Wavy Underline</h1>
+<br><br><br><br><br>
+
+<h1 class="sienna-extra-bold">41. Sienna Extra Bold Weight</h1>
+<br><br><br><br><br>
+
+<h1 class="mediumblue-thin">42. Medium Blue Thin Weight</h1>
+<br><br><br><br><br>
+
+<h1 id="darkturquoise-georgia">43. Dark Turquoise Georgia Italic</h1>
+<br><br><br><br><br>
+
+<h1 class="orangered-gradient">44. Orange Red Gradient Background</h1>
+<br><br><br><br><br>
+
+<h1 id="white-purple-centered">45. White on Purple Centered Padded</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgreen-left-border">46. Dark Green Left Border Accent</h1>
+<br><br><br><br><br>
+
+<h1 class="mediumvioletred-shadows">47. Medium Violet Red Multiple Shadows</h1>
+<br><br><br><br><br>
+
+<h1 id="teal-spaced-uppercase">48. Teal Spaced Uppercase</h1>
+<br><br><br><br><br>
+
+<h1 class="darkred-rounded-box">49. Dark Red Rounded Box Centered</h1>
+<br><br><br><br><br>
+
+<h1 id="navy-times-bold">50. Navy Times Bold Underline Shadow</h1>
+<br><br><br><br><br>
+
+<h1 class="darkslateblue-nowrap">51. Dark Slate Blue No Wrap Overflow Hidden</h1>
+<br><br><br><br><br>
+
+<h1 class="crimson-pre-space">52. Crimson   Pre   White   Space</h1>
+<br><br><br><br><br>
+
+<h1 id="green-rtl">53. Green Right to Left Direction</h1>
+<br><br><br><br><br>
+
+<h1 class="brown-bidi">54. Brown Unicode Bidi Override RTL</h1>
+<br><br><br><br><br>
+
+<h1 id="darkgray-stretch">55. Dark Gray Font Stretch Expanded</h1>
+<br><br><br><br><br>
+
+<h1 class="mediumorchid-yellow-underline">56. Medium Orchid Yellow Underline Color</h1>
+<br><br><br><br><br>
+
+<h1 class="darkslategray-double-line">57. Dark Slate Gray Double Decoration Line</h1>
+<br><br><br><br><br>
+
+<h1 id="teal-dotted-underline">58. Teal Dotted Red Underline</h1>
+<br><br><br><br><br>
+
+<h1 class="darkblue-pointer">59. Dark Blue Pointer Cursor (Hover Me)</h1>
+<br><br><br><br><br>
+
+<h1 id="green-help-cursor">60. Green Help Cursor (Hover Me)</h1>
+<br><br><br><br><br>
+
+<h1 class="purple-visible">61. Purple Visibility Visible</h1>
+<br><br><br><br><br>
+
+<h1 class="darkred-overflow">62. Dark Red Overflow Visible</h1>
+<br><br><br><br><br>
+
+<h1 id="blue-scroll-x">63. Blue Horizontal Scroll Overflow Very Long Text</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgreen-overflow-y">64. Dark Green Overflow Y Hidden Tall Text That Gets Cut Off</h1>
+<br><br><br><br><br>
+
+<h1 id="maroon-relative-top">65. Maroon Position Relative Top 20px</h1>
+<br><br><br><br><br>
+
+<h1 class="navy-relative-left">66. Navy Position Relative Left 50px</h1>
+<br><br><br><br><br>
+
+<h1 class="darkorange-relative-right">67. Dark Orange Position Relative Right 30px</h1>
+<br><br><br><br><br>
+
+<h1 id="darkviolet-relative-bottom">68. Dark Violet Position Relative Bottom 10px</h1>
+<br><br><br><br><br>
+
+<h1 class="steelblue-zindex">69. Steel Blue Z-Index 10</h1>
+<br><br><br><br><br>
+
+<h1 id="crimson-float">70. Crimson Float Left Half Width</h1>
+<br><br><br><br><br>
+
+<h1 class="teal-clear">71. Teal Clear Both Sides</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgoldenrod-blur">72. Dark Goldenrod Blur Filter</h1>
+<br><br><br><br><br>
+
+<h1 id="blue-brightness">73. Blue Brightness Filter</h1>
+<br><br><br><br><br>
+
+<h1 class="green-contrast">74. Green Contrast Filter</h1>
+<br><br><br><br><br>
+
+<h1 id="red-grayscale">75. Red Grayscale Filter</h1>
+<br><br><br><br><br>
+
+<h1 class="purple-hue-rotate">76. Purple Hue Rotate Filter</h1>
+<br><br><br><br><br>
+
+<h1 class="darkorange-invert">77. Dark Orange Invert Filter</h1>
+<br><br><br><br><br>
+
+<h1 id="navy-saturate">78. Navy Saturate Filter</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgreen-sepia">79. Dark Green Sepia Filter</h1>
+<br><br><br><br><br>
+
+<h1 id="crimson-drop-shadow">80. Crimson Drop Shadow Filter</h1>
+<br><br><br><br><br>
+
+<h1 class="teal-rotate">81. Teal Transform Rotate 2deg</h1>
+<br><br><br><br><br>
+
+<h1 class="purple-scale">82. Purple Transform Scale 1.2</h1>
+<br><br><br><br><br>
+
+<h1 id="darkblue-skew">83. Dark Blue Transform Skew</h1>
+<br><br><br><br><br>
+
+<h1 class="darkorange-translate-x">84. Dark Orange Transform Translate X</h1>
+<br><br><br><br><br>
+
+<h1 id="darkmagenta-translate-y">85. Dark Magenta Transform Translate Y</h1>
+<br><br><br><br><br>
+
+<h1 class="forestgreen-transform-origin">86. Forest Green Transform Origin Left</h1>
+<br><br><br><br><br>
+
+<h1 class="maroon-transition">87. Maroon Transition All 0.3s</h1>
+<br><br><br><br><br>
+
+<h1 id="darkslateblue-transition-duration">88. Dark Slate Blue Transition Duration 1s</h1>
+<br><br><br><br><br>
+
+<h1 class="chocolate-transition-property">89. Chocolate Transition Property Color</h1>
+<br><br><br><br><br>
+
+<h1 id="steelblue-bg-lightblue">90. Steel Blue Background Color Lightblue</h1>
+<br><br><br><br><br>
+
+<h1 class="white-darkgreen-bg">91. White on Dark Green Background</h1>
+<br><br><br><br><br>
+
+<h1 class="black-repeating-gradient">92. Black Repeating Gradient Background</h1>
+<br><br><br><br><br>
+
+<h1 id="white-bg-position">93. White Background Position Center</h1>
+<br><br><br><br><br>
+
+<h1 class="darkred-bg-clip">94. Dark Red Background Clip Padding Box</h1>
+<br><br><br><br><br>
+
+<h1 id="navy-bg-attachment">95. Navy Background Attachment Scroll</h1>
+<br><br><br><br><br>
+
+<h1 class="darkgreen-bg-origin">96. Dark Green Background Origin Border Box</h1>
+<br><br><br><br><br>
+
+<h1 class="crimson-box-sizing">97. Crimson Box Sizing Border Box</h1>
+<br><br><br><br><br>
+
+<h1 id="teal-mixed-borders">98. Teal Mixed Border Styles</h1>
+<br><br><br><br><br>
+
+<h1 class="purple-individual-margins">99. Purple Individual Margins</h1>
+<br><br><br><br><br>
+
+<h1 id="darkblue-individual-paddings">100. Dark Blue Individual Paddings</h1>
+
+</body>
+</html>
