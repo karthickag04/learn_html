@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Multimedia - Complete Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML5 Multimedia Elements - Complete Guide</h1>
+        <p>Comprehensive examples of all HTML multimedia tags with controls</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#picture">Picture</a></li>
+            <li><a href="#svg">SVG</a></li>
+            <li><a href="#canvas">Canvas</a></li>
+            <li><a href="#iframe">iFrame</a></li>
+            <li><a href="#embed">Embed & Object</a></li>
+        </ul>
+    </nav>
+
+  
+
+ 
+    <main>
+        
+        <section id="images" class="multimedia-section">
+            <h2>📷 Image Tag (&lt;img&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Basic Image with Attributes</h3>
+                <img src="images/city.jpg" 
+                     alt="City skyline view" 
+                     width="400" 
+                     height="300"
+                     title="Beautiful city view"
+                     loading="lazy">
+                <p class="description">Local image with width, height, alt, and lazy loading</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Image with Different Sizes</h3>
+                <div class="image-grid">
+                    <img src="images/dog.jpg" alt="Cute dog" width="200">
+                    <img src="images/hand.jpg" alt="Hand gesture" width="200">
+                    <img src="images/city.jpg" alt="City view" width="200">
+                </div>
+            </div>
+
+            <div class="example-container">
+                <h3>Online Image Source</h3>
+                <img src="https://picsum.photos/400/300" 
+                     alt="Random image from online source" 
+                     width="400" 
+                     height="300">
+                <p class="description">Image loaded from external URL</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Image with Usemap (Image Map)</h3>
+                <img src="images/city.jpg" 
+                     alt="City with clickable areas" 
+                     usemap="#citymap" 
+                     width="400">
+                <map name="citymap">
+                    <area shape="rect" coords="0,0,100,100" href="#" alt="Top left area" title="Northwest">
+                    <area shape="circle" coords="200,150,50" href="#" alt="Center area" title="Center">
+                    <area shape="rect" coords="300,200,400,300" href="#" alt="Bottom right" title="Southeast">
+                </map>
+                <p class="description">Click different areas of the image (image map)</p>
+            </div>
+        </section>
+
+        
+        <section id="picture" class="multimedia-section">
+            <h2>🖼️ Picture Element (&lt;picture&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Responsive Images with Different Sources</h3>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/city.jpg">
+                    <source media="(min-width: 400px)" srcset="images/dog.jpg">
+                    <img src="images/hand.jpg" alt="Responsive image" width="400">
+                </picture>
+                <p class="description">Different images for different screen sizes</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Picture with WebP Support</h3>
+                <picture>
+                    <source srcset="https://picsum.photos/400/300.webp" type="image/webp">
+                    <source srcset="https://picsum.photos/400/300.jpg" type="image/jpeg">
+                    <img src="https://picsum.photos/400/300" alt="Modern format support" width="400">
+                </picture>
+                <p class="description">Fallback support for modern image formats</p>
+            </div>
+        </section>
+
+        
+        <section id="audio" class="multimedia-section">
+            <h2>🔊 Audio Tag (&lt;audio&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Basic Audio with All Controls</h3>
+                <audio controls>
+                    <source src="audio/crowd-cheering.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="description">Local audio file with standard controls</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Audio with Autoplay and Loop</h3>
+                <audio controls loop muted>
+                    <source src="audio/crowd-cheering.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="description">Looping audio (muted by default for autoplay compliance)</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Audio with Preload Settings</h3>
+                <audio controls preload="metadata">
+                    <source src="audio/crowd-cheering.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="description">Audio with metadata preloading</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Online Audio Source</h3>
+                <audio controls>
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="description">Audio from external URL</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Multiple Audio Format Support</h3>
+                <audio controls>
+                    <source src="audio/crowd-cheering.mp3" type="audio/mpeg">
+                    <source src="audio/crowd-cheering.ogg" type="audio/ogg">
+                    <source src="audio/crowd-cheering.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="description">Multiple formats for browser compatibility</p>
+            </div>
+        </section>
+
+        
+        <section id="video" class="multimedia-section">
+            <h2>🎬 Video Tag (&lt;video&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Basic Video with All Controls</h3>
+                <video controls width="640" height="360">
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Local video file with full controls</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Video with Poster and Preload</h3>
+                <video controls width="640" height="360" poster="images/city.jpg" preload="metadata">
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Video with custom poster image</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Autoplay Muted Video (Loop)</h3>
+                <video controls autoplay muted loop width="640" height="360">
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Auto-playing video with loop (muted for autoplay compliance)</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Online Video Source</h3>
+                <video controls width="640" height="360">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Video from external URL</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Video with Multiple Formats</h3>
+                <video controls width="640" height="360">
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                    <source src="videos/mov_bbb.webm" type="video/webm">
+                    <source src="videos/mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Multiple video formats for compatibility</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Video with Subtitles/Captions</h3>
+                <video controls width="640" height="360">
+                    <source src="videos/mov_bbb.mp4" type="video/mp4">
+                    <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
+                    <track kind="subtitles" src="subtitles_es.vtt" srclang="es" label="Spanish">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="description">Video with subtitle tracks (VTT format)</p>
+            </div>
+        </section>
+
+        
+        <section id="svg" class="multimedia-section">
+            <h2>🎨 SVG (Scalable Vector Graphics)</h2>
+            
+            <div class="example-container">
+                <h3>Inline SVG - Circle</h3>
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="80" fill="#3498db" stroke="#2c3e50" stroke-width="4"/>
+                </svg>
+                <p class="description">Simple SVG circle</p>
+            </div>
+
+            <div class="example-container">
+                <h3>SVG Rectangle with Gradient</h3>
+                <svg width="300" height="200">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#f39c12;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="300" height="200" fill="url(#grad1)" rx="15"/>
+                </svg>
+                <p class="description">SVG with gradient fill</p>
+            </div>
+
+            <div class="example-container">
+                <h3>SVG Path - Star</h3>
+                <svg width="200" height="200">
+                    <path d="M100,10 L120,70 L180,70 L135,110 L155,170 L100,130 L45,170 L65,110 L20,70 L80,70 Z" 
+                          fill="#f1c40f" 
+                          stroke="#e67e22" 
+                          stroke-width="3"/>
+                </svg>
+                <p class="description">SVG path element creating a star</p>
+            </div>
+
+            <div class="example-container">
+                <h3>SVG Text and Animation</h3>
+                <svg width="300" height="150">
+                    <text x="150" y="75" font-size="30" font-weight="bold" text-anchor="middle" fill="#8e44ad">
+                        HTML5 Multimedia
+                        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                    </text>
+                </svg>
+                <p class="description">Animated SVG text</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Complex SVG Shapes</h3>
+                <svg width="300" height="200">
+                    <polygon points="150,20 280,180 20,180" fill="#16a085" stroke="#1abc9c" stroke-width="3"/>
+                    <circle cx="150" cy="120" r="40" fill="#e8f8f5" opacity="0.7"/>
+                </svg>
+                <p class="description">Polygon and circle combination</p>
+            </div>
+        </section>
+
+        
+        <section id="canvas" class="multimedia-section">
+            <h2>🖌️ Canvas Element (&lt;canvas&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Canvas - Rectangle Drawing</h3>
+                <canvas id="canvas1" width="400" height="200"></canvas>
+                <p class="description">Canvas with drawn rectangles</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Canvas - Circle and Arc</h3>
+                <canvas id="canvas2" width="400" height="200"></canvas>
+                <p class="description">Canvas with circles and arcs</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Canvas - Gradient</h3>
+                <canvas id="canvas3" width="400" height="200"></canvas>
+                <p class="description">Canvas with gradient fill</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Canvas - Text</h3>
+                <canvas id="canvas4" width="400" height="200"></canvas>
+                <p class="description">Text rendering on canvas</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Canvas - Image Drawing</h3>
+                <canvas id="canvas5" width="400" height="300"></canvas>
+                <p class="description">Drawing images on canvas</p>
+            </div>
+        </section>
+
+        
+        <section id="iframe" class="multimedia-section">
+            <h2>🪟 iFrame (&lt;iframe&gt;)</h2>
+            
+            <div class="example-container">
+                <h3>Embedded YouTube Video</h3>
+                <iframe width="640" height="360" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                <p class="description">YouTube video embedded via iframe</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Embedded Google Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841419557304!2d-73.98823492404074!3d40.75797937139023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1701432000000!5m2!1sen!2sus" 
+                        width="640" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <p class="description">Google Maps embedded via iframe</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Embedded External Website</h3>
+                <iframe src="https://www.w3.org" 
+                        width="640" 
+                        height="400" 
+                        title="W3C Website"
+                        sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <p class="description">External website with sandbox security</p>
+            </div>
+        </section>
+
+        
+        <section id="embed" class="multimedia-section">
+            <h2>🔌 Embed & Object Tags</h2>
+            
+            <div class="example-container">
+                <h3>Embed Tag - PDF</h3>
+                <embed src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" 
+                       type="application/pdf" 
+                       width="640" 
+                       height="400">
+                <p class="description">PDF document embedded using embed tag</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Embed Tag - Image</h3>
+                <embed src="images/city.jpg" 
+                       type="image/jpeg" 
+                       width="400" 
+                       height="300">
+                <p class="description">Image embedded using embed tag</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Object Tag - Video</h3>
+                <object data="videos/mov_bbb.mp4" 
+                        type="video/mp4" 
+                        width="640" 
+                        height="360">
+                    <param name="autoplay" value="false">
+                    <param name="controller" value="true">
+                    Your browser does not support the object tag.
+                </object>
+                <p class="description">Video embedded using object tag</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Object Tag - Image with Fallback</h3>
+                <object data="images/dog.jpg" 
+                        type="image/jpeg" 
+                        width="400" 
+                        height="300">
+                    <img src="images/hand.jpg" alt="Fallback image">
+                </object>
+                <p class="description">Object tag with fallback content</p>
+            </div>
+        </section>
+
+        
+        <section class="multimedia-section">
+            <h2>🎯 Additional Multimedia Features</h2>
+            
+            <div class="example-container">
+                <h3>Figure with Caption</h3>
+                <figure>
+                    <img src="images/city.jpg" alt="City skyline" width="400">
+                    <figcaption>Figure 1: Beautiful city skyline at sunset</figcaption>
+                </figure>
+                <p class="description">Semantic image with caption using figure/figcaption</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Audio with Figure</h3>
+                <figure>
+                    <figcaption>Listen to the crowd cheering:</figcaption>
+                    <audio controls>
+                        <source src="audio/crowd-cheering.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </figure>
+                <p class="description">Audio element wrapped in figure for semantic meaning</p>
+            </div>
+
+            <div class="example-container">
+                <h3>Video with Figure</h3>
+                <figure>
+                    <figcaption>Watch the sample video:</figcaption>
+                    <video controls width="640" height="360">
+                        <source src="videos/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </figure>
+                <p class="description">Video element wrapped in figure for better semantics</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Multimedia Tutorial | All multimedia elements demonstrated</p>
+    </footer> 
+
+    <script src="script.js"></script>
+</body>
+</html>
