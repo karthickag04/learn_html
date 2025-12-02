@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            display: block;
+            transition: all 0.3s ease;
+            background-color: #555;
+        }
+
+        li a:hover {
+            background-color: #007bff;
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        li a:focus {
+            outline: 2px solid #fff;
+            transform: scale(1.05) translateY(-3px);
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" tabindex="1">Home</a></li>
+            <li><a href="#" tabindex="2">About</a></li>
+            <li><a href="#" tabindex="3">Services</a></li>
+            <li><a href="#" tabindex="4">Portfolio</a></li>
+            <li><a href="#" tabindex="5">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
