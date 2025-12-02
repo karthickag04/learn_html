@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+        ul li {
+            position: relative;
+            padding: 14px 16px;
+        }
+
+
+        ul li a{
+            color: red;
+            text-decoration: none;
+        }
+
+        li .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            z-index: 1;
+            min-width: 200px; 
+        }
+
+        li .dropdown a {
+            display: block;
+            padding: 10px 16px;
+        }
+
+        li .dropdown a:hover {
+            background-color: #444;
+        }
+
+        li:hover .dropdown {
+            display: block;
+        }
+           
+    </style>
+</head>
+<body>
+    <ul>
+       
+        <li>
+            <a href="#">Services</a>
+            <div class="dropdown">
+                <a href="#">Mobile App Development</a>
+                <a href="#">Website Development</a>
+            </div>
+        </li>
+        
+    </ul>
+</body>
+</html>
