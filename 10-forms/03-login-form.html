@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="forms-style.css">
+    <style>
+        .login-container {
+            max-width: 450px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .forgot-password a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .or-divider {
+            text-align: center;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .or-divider::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--border-light);
+        }
+
+        .or-divider span {
+            background: white;
+            padding: 0 15px;
+            position: relative;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .social-login {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-btn {
+            padding: 12px;
+            border: 2px solid var(--border-default);
+            background: white;
+            color: var(--text-primary);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: none;
+        }
+
+        .social-btn:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🔑 User Login</h1>
+
+    <div class="form-container login-container">
+        <div class="form-header">
+            <h2>Welcome Back!</h2>
+            <p>Please login to your account</p>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="login-email">Email or Username <span class="required">*</span></label>
+                <input type="text" id="login-email" name="login-email" placeholder="Enter your email or username"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="login-password">Password <span class="required">*</span></label>
+                <input type="password" id="login-password" name="login-password" placeholder="Enter your password"
+                    required>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="remember" value="yes">
+                    <span class="checkmark"></span>
+                    Remember me on this device
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-lg" style="width: 100%;">Sign In</button>
+            </div>
+
+        </form>
+
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
+
+        <div class="social-login">
+            <button class="social-btn" type="button">Continue with Google</button>
+            <button class="social-btn" type="button">Continue with Facebook</button>
+            <button class="social-btn" type="button">Continue with Apple</button>
+        </div>
+
+        <div class="form-footer">
+            <p>Don't have an account? <a href="02-registration-form.html">Sign Up</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

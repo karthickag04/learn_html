@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements Gallery</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+
+<body>
+
+    <h1>📝 HTML Form Elements Gallery</h1>
+
+    <div class="container">
+
+        <!-- Section 1: Text Input Types -->
+        <div class="section">
+            <h2>1. Text Input Types</h2>
+            <p class="description">Various text input types for different kinds of data</p>
+
+            <div class="form-group">
+                <label for="input-text">Text Input <span class="required">*</span></label>
+                <input type="text" id="input-text" placeholder="Enter regular text" required>
+            </div>
+
+            <div class="form-group">
+                <label for="input-email">Email Input <span class="required">*</span></label>
+                <input type="email" id="input-email" placeholder="user@example.com" required>
+                <span class="help-text">We'll never share your email.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="input-password">Password Input <span class="required">*</span></label>
+                <input type="password" id="input-password" placeholder="Enter password" required>
+                <span class="help-text">Must be at least 8 characters long.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="input-tel">Telephone Input</label>
+                <input type="tel" id="input-tel" placeholder="+1 (555) 123-4567" pattern="[+0-9\s()-]+">
+            </div>
+
+            <div class="form-group">
+                <label for="input-url">URL Input</label>
+                <input type="url" id="input-url" placeholder="https://example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="input-search">Search Input</label>
+                <input type="search" id="input-search" placeholder="Search...">
+            </div>
+        </div>
+
+        <!-- Section 2: Numeric Inputs -->
+        <div class="section">
+            <h2>2. Numeric Inputs</h2>
+            <p class="description">Number and range input controls</p>
+
+            <div class="form-group">
+                <label for="input-number">Number Input</label>
+                <input type="number" id="input-number" placeholder="Enter a number" min="0" max="100" step="1">
+            </div>
+
+            <div class="form-group">
+                <label for="input-range">Range Slider (0-100)</label>
+                <input type="range" id="input-range" min="0" max="100" value="50">
+                <span class="help-text">Current value: <span id="range-value">50</span></span>
+            </div>
+        </div>
+
+        <!-- Section 3: Date and Time Inputs -->
+        <div class="section">
+            <h2>3. Date and Time Inputs</h2>
+            <p class="description">Various date and time picker controls</p>
+
+            <div class="form-group">
+                <label for="input-date">Date Input</label>
+                <input type="date" id="input-date">
+            </div>
+
+            <div class="form-group">
+                <label for="input-time">Time Input</label>
+                <input type="time" id="input-time">
+            </div>
+
+            <div class="form-group">
+                <label for="input-datetime">Date and Time Input</label>
+                <input type="datetime-local" id="input-datetime">
+            </div>
+
+            <div class="form-group">
+                <label for="input-month">Month Input</label>
+                <input type="month" id="input-month">
+            </div>
+
+            <div class="form-group">
+                <label for="input-week">Week Input</label>
+                <input type="week" id="input-week">
+            </div>
+        </div>
+
+        <!-- Section 4: Selection Controls -->
+        <div class="section">
+            <h2>4. Selection Controls</h2>
+            <p class="description">Checkboxes, radio buttons, and dropdown selects</p>
+
+            <div class="form-group">
+                <label>Checkboxes</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="interests" value="coding">
+                        <span class="checkmark"></span>
+                        Coding
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="interests" value="design">
+                        <span class="checkmark"></span>
+                        Design
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="interests" value="writing">
+                        <span class="checkmark"></span>
+                        Writing
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="interests" value="music">
+                        <span class="checkmark"></span>
+                        Music
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Inline Checkboxes</label>
+                <div class="checkbox-group inline">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="skills" value="html">
+                        <span class="checkmark"></span>
+                        HTML
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="skills" value="css">
+                        <span class="checkmark"></span>
+                        CSS
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="skills" value="js">
+                        <span class="checkmark"></span>
+                        JavaScript
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Radio Buttons</label>
+                <div class="radio-group">
+                    <label class="radio-wrapper">
+                        <input type="radio" name="gender" value="male">
+                        <span class="radiomark"></span>
+                        Male
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="gender" value="female">
+                        <span class="radiomark"></span>
+                        Female
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="gender" value="other">
+                        <span class="radiomark"></span>
+                        Other
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="gender" value="prefer-not">
+                        <span class="radiomark"></span>
+                        Prefer not to say
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Inline Radio Buttons</label>
+                <div class="radio-group inline">
+                    <label class="radio-wrapper">
+                        <input type="radio" name="subscription" value="free">
+                        <span class="radiomark"></span>
+                        Free
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="subscription" value="pro">
+                        <span class="radiomark"></span>
+                        Pro
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="subscription" value="enterprise">
+                        <span class="radiomark"></span>
+                        Enterprise
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="select-country">Select Dropdown</label>
+                <select id="select-country" required>
+                    <option value="">-- Select a country --</option>
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="ca">Canada</option>
+                    <option value="au">Australia</option>
+                    <option value="in">India</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="jp">Japan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-datalist">Datalist (with autocomplete)</label>
+                <input type="text" id="input-datalist" list="browsers" placeholder="Choose or type a browser">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                    <option value="Opera">
+                </datalist>
+                <span class="help-text">Start typing to see suggestions.</span>
+            </div>
+        </div>
+
+        <!-- Section 5: Textarea -->
+        <div class="section">
+            <h2>5. Textarea</h2>
+            <p class="description">Multi-line text input for longer content</p>
+
+            <div class="form-group">
+                <label for="textarea-message">Your Message</label>
+                <textarea id="textarea-message" placeholder="Enter your message here..." rows="5"></textarea>
+                <span class="help-text">Maximum 500 characters.</span>
+            </div>
+        </div>
+
+        <!-- Section 6: File Upload -->
+        <div class="section">
+            <h2>6. File Upload</h2>
+            <p class="description">File input control for uploading files</p>
+
+            <div class="form-group">
+                <label for="input-file">Upload File</label>
+                <input type="file" id="input-file">
+            </div>
+
+            <div class="form-group">
+                <label for="input-file-multiple">Upload Multiple Files</label>
+                <input type="file" id="input-file-multiple" multiple>
+            </div>
+
+            <div class="form-group">
+                <label for="input-file-image">Upload Image Only</label>
+                <input type="file" id="input-file-image" accept="image/*">
+            </div>
+        </div>
+
+        <!-- Section 7: Color Picker -->
+        <div class="section">
+            <h2>7. Color Picker</h2>
+            <p class="description">Color selection input</p>
+
+            <div class="form-group">
+                <label for="input-color">Choose a Color</label>
+                <input type="color" id="input-color" value="#667eea">
+            </div>
+        </div>
+
+        <!-- Section 8: Buttons -->
+        <div class="section">
+            <h2>8. Button Types</h2>
+            <p class="description">Different button types and styles</p>
+
+            <div class="demo-box">
+                <h3>Standard Buttons</h3>
+                <div class="btn-group">
+                    <button type="button">Standard Button</button>
+                    <input type="submit" value="Submit Button">
+                    <input type="reset" value="Reset Button">
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <h3>Button Variants</h3>
+                <div class="btn-group">
+                    <button class="btn">Primary</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-success">Success</button>
+                    <button class="btn btn-danger">Danger</button>
+                    <button class="btn btn-outline">Outline</button>
+                </div>
+            </div>
+
+            <div class="demo-box">
+                <h3>Button Sizes</h3>
+                <div class="btn-group">
+                    <button class="btn btn-sm">Small Button</button>
+                    <button class="btn">Default Button</button>
+                    <button class="btn btn-lg">Large Button</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 9: Fieldset & Legend -->
+        <div class="section">
+            <h2>9. Fieldset & Legend</h2>
+            <p class="description">Grouping form elements with fieldset</p>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="fieldset-name">Full Name</label>
+                    <input type="text" id="fieldset-name" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="fieldset-email">Email Address</label>
+                    <input type="email" id="fieldset-email" placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="fieldset-phone">Phone Number</label>
+                    <input type="tel" id="fieldset-phone" placeholder="+1 234 567 8900">
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Section 10: Disabled & Readonly States -->
+        <div class="section">
+            <h2>10. Input States</h2>
+            <p class="description">Different states of form inputs</p>
+
+            <div class="form-group">
+                <label for="input-disabled">Disabled Input</label>
+                <input type="text" id="input-disabled" value="This input is disabled" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="input-readonly">Readonly Input</label>
+                <input type="text" id="input-readonly" value="This input is readonly" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="input-required">Required Input <span class="required">*</span></label>
+                <input type="text" id="input-required" placeholder="This field is required" required>
+            </div>
+        </div>
+
+        <!-- Section 11: Validation Demo -->
+        <div class="section">
+            <h2>11. HTML5 Validation</h2>
+            <p class="description">Built-in HTML5 validation examples</p>
+
+            <form>
+                <div class="form-group">
+                    <label for="val-email">Email (Required) <span class="required">*</span></label>
+                    <input type="email" id="val-email" placeholder="Enter valid email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="val-pattern">Pattern Validation (Only letters)</label>
+                    <input type="text" id="val-pattern" pattern="[A-Za-z]+" placeholder="Letters only">
+                </div>
+
+                <div class="form-group">
+                    <label for="val-minmax">Number Range (1-10)</label>
+                    <input type="number" id="val-minmax" min="1" max="10" placeholder="Enter 1-10">
+                </div>
+
+                <div class="form-group">
+                    <label for="val-minlength">Minimum Length (5 chars)</label>
+                    <input type="text" id="val-minlength" minlength="5" placeholder="At least 5 characters">
+                </div>
+
+                <div class="btn-group">
+                    <button type="submit">Submit Form</button>
+                    <button type="reset" class="btn-outline">Reset Form</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+
+<body>
+
+    <h1>📧 Contact Us</h1>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contact-name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="contact-name" name="contact-name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="contact-email" name="contact-email" placeholder="john@example.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-phone">Phone Number <span class="optional">(Optional)</span></label>
+                <input type="tel" id="contact-phone" name="contact-phone" placeholder="+1 (555) 123-4567">
+            </div>
+
+            <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <select id="contact-subject" name="contact-subject" required>
+                    <option value="">-- Select a subject --</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Your Message <span class="required">*</span></label>
+                <textarea id="contact-message" name="contact-message" placeholder="Tell us how we can help you..."
+                    rows="6" required></textarea>
+                <span class="help-text">Please provide as much detail as possible.</span>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-attachment">Attachment <span class="optional">(Optional)</span></label>
+                <input type="file" id="contact-attachment" name="contact-attachment">
+                <span class="help-text">You can attach files up to 10MB (PDF, DOC, DOCX, JPG, PNG).</span>
+            </div>
+
+            <div class="form-group">
+                <label>How did you hear about us? <span class="optional">(Optional)</span></label>
+                <div class="radio-group">
+                    <label class="radio-wrapper">
+                        <input type="radio" name="source" value="search">
+                        <span class="radiomark"></span>
+                        Search Engine (Google, Bing, etc.)
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="source" value="social">
+                        <span class="radiomark"></span>
+                        Social Media
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="source" value="friend">
+                        <span class="radiomark"></span>
+                        Friend or Colleague
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="source" value="advertisement">
+                        <span class="radiomark"></span>
+                        Advertisement
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="source" value="other">
+                        <span class="radiomark"></span>
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="newsletter" value="yes">
+                    <span class="checkmark"></span>
+                    Subscribe to our newsletter for updates and special offers
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="copy" value="yes" checked>
+                    <span class="checkmark"></span>
+                    Send me a copy of this message
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-lg">Send Message</button>
+                <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+
+        </form>
+
+        <div class="form-footer">
+            <p>Need immediate assistance? Call us at <strong>+1 (800) 123-4567</strong></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

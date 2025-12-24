@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+
+<body>
+
+    <h1>🛒 Checkout</h1>
+
+    <div class="form-container wide">
+        <div class="form-header">
+            <h2>Complete Your Order</h2>
+            <p>Please fill in your billing and shipping information</p>
+        </div>
+
+        <form action="#" method="post">
+
+            <!-- Billing Information -->
+            <fieldset>
+                <legend>💳 Billing Information</legend>
+
+                <div class="form-group">
+                    <label for="billing-name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="billing-name" name="billing-name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="billing-email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="billing-email" name="billing-email" placeholder="john@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billing-phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="billing-phone" name="billing-phone" placeholder="+1 (555) 123-4567"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="billing-address1">Address Line 1 <span class="required">*</span></label>
+                    <input type="text" id="billing-address1" name="billing-address1" placeholder="123 Main Street"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="billing-address2">Address Line 2 <span class="optional">(Optional)</span></label>
+                    <input type="text" id="billing-address2" name="billing-address2"
+                        placeholder="Apartment, suite, unit, etc.">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="billing-city">City <span class="required">*</span></label>
+                        <input type="text" id="billing-city" name="billing-city" placeholder="New York" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billing-state">State/Province <span class="required">*</span></label>
+                        <input type="text" id="billing-state" name="billing-state" placeholder="NY" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="billing-zip">ZIP/Postal Code <span class="required">*</span></label>
+                        <input type="text" id="billing-zip" name="billing-zip" placeholder="10001" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="billing-country">Country <span class="required">*</span></label>
+                    <select id="billing-country" name="billing-country" required>
+                        <option value="">-- Select Country --</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                        <option value="de">Germany</option>
+                        <option value="fr">France</option>
+                        <option value="in">India</option>
+                        <option value="jp">Japan</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Shipping Information -->
+            <fieldset>
+                <legend>📦 Shipping Information</legend>
+
+                <div class="form-group">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="same-as-billing" value="yes" checked>
+                        <span class="checkmark"></span>
+                        Shipping address same as billing
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Shipping Method <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <label class="radio-wrapper">
+                            <input type="radio" name="shipping-method" value="standard" required checked>
+                            <span class="radiomark"></span>
+                            Standard Shipping (5-7 business days) - FREE
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="shipping-method" value="express">
+                            <span class="radiomark"></span>
+                            Express Shipping (2-3 business days) - $15.00
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="shipping-method" value="overnight">
+                            <span class="radiomark"></span>
+                            Overnight Shipping (1 business day) - $35.00
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>💰 Payment Details</legend>
+
+                <div class="form-group">
+                    <label for="card-number">Credit Card Number <span class="required">*</span></label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"
+                        pattern="[0-9\s]+" maxlength="19" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card-expiry-month">Expiration Month <span class="required">*</span></label>
+                        <select id="card-expiry-month" name="card-expiry-month" required>
+                            <option value="">Month</option>
+                            <option value="01">01 - January</option>
+                            <option value="02">02 - February</option>
+                            <option value="03">03 - March</option>
+                            <option value="04">04 - April</option>
+                            <option value="05">05 - May</option>
+                            <option value="06">06 - June</option>
+                            <option value="07">07 - July</option>
+                            <option value="08">08 - August</option>
+                            <option value="09">09 - September</option>
+                            <option value="10">10 - October</option>
+                            <option value="11">11 - November</option>
+                            <option value="12">12 - December</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="card-expiry-year">Expiration Year <span class="required">*</span></label>
+                        <select id="card-expiry-year" name="card-expiry-year" required>
+                            <option value="">Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="card-cvv">CVV <span class="required">*</span></label>
+                        <input type="text" id="card-cvv" name="card-cvv" placeholder="123" pattern="[0-9]{3,4}"
+                            maxlength="4" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardholder-name">Cardholder Name <span class="required">*</span></label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" placeholder="JOHN DOE" required>
+                </div>
+            </fieldset>
+
+            <!-- Order Notes -->
+            <div class="form-group">
+                <label for="order-notes">Order Notes <span class="optional">(Optional)</span></label>
+                <textarea id="order-notes" name="order-notes"
+                    placeholder="Special delivery instructions or gift message..." rows="3"></textarea>
+            </div>
+
+            <!-- Terms -->
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="terms" value="accepted" required>
+                    <span class="checkmark"></span>
+                    I agree to the Terms & Conditions and Privacy Policy <span class="required">*</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="save-info" value="yes">
+                    <span class="checkmark"></span>
+                    Save this information for faster checkout next time
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success btn-lg">Place Order</button>
+                <button type="button" class="btn btn-outline">Continue Shopping</button>
+            </div>
+
+        </form>
+
+        <div class="form-footer">
+            <p>🔒 Your payment information is secure and encrypted</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

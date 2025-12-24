@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+
+<body>
+
+    <h1>💼 Job Application</h1>
+
+    <div class="form-container wide">
+        <div class="form-header">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for talented individuals to join us. Complete the application below.</p>
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>👤 Personal Information</legend>
+
+                <div class="form-group">
+                    <label for="applicant-name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="applicant-name" name="applicant-name" placeholder="John Michael Doe"
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="applicant-email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="applicant-email" name="applicant-email" placeholder="john@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicant-phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="applicant-phone" name="applicant-phone" placeholder="+1 (555) 123-4567"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="linkedin">LinkedIn Profile</label>
+                        <input type="url" id="linkedin" name="linkedin"
+                            placeholder="https://linkedin.com/in/yourprofile">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio/Website <span class="optional">(Optional)</span></label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="current-location">Current Location <span class="required">*</span></label>
+                    <input type="text" id="current-location" name="current-location" placeholder="City, State/Country"
+                        required>
+                </div>
+            </fieldset>
+
+            <!-- Position Details -->
+            <fieldset>
+                <legend>💼 Position Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="position">Position Applied For <span class="required">*</span></label>
+                        <select id="position" name="position" required>
+                            <option value="">-- Select Position --</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                            <option value="designer">UI/UX Designer</option>
+                            <option value="product">Product Manager</option>
+                            <option value="marketing">Marketing Specialist</option>
+                            <option value="sales">Sales Representative</option>
+                            <option value="support">Customer Support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="department">Department <span class="required">*</span></label>
+                        <select id="department" name="department" required>
+                            <option value="">-- Select Department --</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="design">Design</option>
+                            <option value="product">Product</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                            <option value="operations">Operations</option>
+                            <option value="hr">Human Resources</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="salary-expectation">Expected Salary Range (Annual)</label>
+                        <select id="salary-expectation" name="salary-expectation">
+                            <option value="">-- Select Range --</option>
+                            <option value="30-50k">$30,000 - $50,000</option>
+                            <option value="50-70k">$50,000 - $70,000</option>
+                            <option value="70-90k">$70,000 - $90,000</option>
+                            <option value="90-120k">$90,000 - $120,000</option>
+                            <option value="120k+">$120,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="start-date">Available Start Date <span class="required">*</span></label>
+                        <input type="date" id="start-date" name="start-date" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Employment Type Preference</label>
+                    <div class="checkbox-group inline">
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" name="employment-type" value="full-time">
+                            <span class="checkmark"></span>
+                            Full-time
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" name="employment-type" value="part-time">
+                            <span class="checkmark"></span>
+                            Part-time
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" name="employment-type" value="contract">
+                            <span class="checkmark"></span>
+                            Contract
+                        </label>
+                        <label class="checkbox-wrapper">
+                            <input type="checkbox" name="employment-type" value="remote">
+                            <span class="checkmark"></span>
+                            Remote
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Qualifications -->
+            <fieldset>
+                <legend>🎓 Qualifications & Experience</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="education">Highest Education Level <span class="required">*</span></label>
+                        <select id="education" name="education" required>
+                            <option value="">-- Select Education Level --</option>
+                            <option value="high-school">High School Diploma</option>
+                            <option value="associate">Associate Degree</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="phd">PhD/Doctorate</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience-years">Years of Experience <span class="required">*</span></label>
+                        <input type="number" id="experience-years" name="experience-years" min="0" max="50"
+                            placeholder="0" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Technical Skills/Expertise</label>
+                    <input type="text" id="skills" name="skills" list="skill-suggestions"
+                        placeholder="e.g., JavaScript, Python, React, etc.">
+                    <datalist id="skill-suggestions">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="Java">
+                        <option value="React">
+                        <option value="Node.js">
+                        <option value="SQL">
+                        <option value="HTML/CSS">
+                        <option value="Git">
+                        <option value="AWS">
+                        <option value="Docker">
+                    </datalist>
+                    <span class="help-text">Start typing to see suggestions, or enter your own skills</span>
+                </div>
+
+                <div class="form-group">
+                    <label>Proficiency Level</label>
+                    <div class="radio-group inline">
+                        <label class="radio-wrapper">
+                            <input type="radio" name="proficiency" value="beginner">
+                            <span class="radiomark"></span>
+                            Beginner
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="proficiency" value="intermediate">
+                            <span class="radiomark"></span>
+                            Intermediate
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="proficiency" value="advanced">
+                            <span class="radiomark"></span>
+                            Advanced
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="proficiency" value="expert">
+                            <span class="radiomark"></span>
+                            Expert
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter <span class="required">*</span></label>
+                    <textarea id="cover-letter" name="cover-letter"
+                        placeholder="Tell us why you're a great fit for this position..." rows="8" required></textarea>
+                    <span class="help-text">Please explain why you're interested in this position and what makes you a
+                        great candidate.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume/CV <span class="required">*</span></label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                    <span class="help-text">Accepted formats: PDF, DOC, DOCX (Max 5MB)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-docs">Additional Documents <span class="optional">(Optional)</span></label>
+                    <input type="file" id="additional-docs" name="additional-docs" multiple>
+                    <span class="help-text">Portfolio, certificates, recommendations, etc.</span>
+                </div>
+            </fieldset>
+
+            <!-- References -->
+            <fieldset>
+                <legend>📝 References</legend>
+
+                <div class="form-group">
+                    <label>Can you provide professional references?</label>
+                    <div class="radio-group inline">
+                        <label class="radio-wrapper">
+                            <input type="radio" name="references" value="yes">
+                            <span class="radiomark"></span>
+                            Yes, I can provide references
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="references" value="later">
+                            <span class="radiomark"></span>
+                            Available upon request
+                        </label>
+                        <label class="radio-wrapper">
+                            <input type="radio" name="references" value="no">
+                            <span class="radiomark"></span>
+                            No references available
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="how-hear">How did you hear about this position?</label>
+                <select id="how-hear" name="how-hear">
+                    <option value="">-- Select Option --</option>
+                    <option value="job-board">Job Board (Indeed, LinkedIn, etc.)</option>
+                    <option value="company-website">Company Website</option>
+                    <option value="referral">Employee Referral</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="recruiter">Recruiter</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-info">Additional Information <span class="optional">(Optional)</span></label>
+                <textarea id="additional-info" name="additional-info"
+                    placeholder="Anything else you'd like us to know..." rows="4"></textarea>
+            </div>
+
+            <!-- Legal -->
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="authorized" value="yes" required>
+                    <span class="checkmark"></span>
+                    I am legally authorized to work in the country where this position is located <span
+                        class="required">*</span>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" name="accuracy" value="yes" required>
+                    <span class="checkmark"></span>
+                    I certify that all information provided is accurate and complete <span class="required">*</span>
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success btn-lg">Submit Application</button>
+                <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+
+        </form>
+
+        <div class="form-footer">
+            <p>Thank you for your interest in joining our team! We'll review your application and get back to you soon.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

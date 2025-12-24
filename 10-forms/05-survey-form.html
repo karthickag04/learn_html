@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="forms-style.css">
+</head>
+
+<body>
+
+    <h1>📊 Customer Survey</h1>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>We Value Your Feedback</h2>
+            <p>Help us improve our services by completing this quick survey. It should only take 2-3 minutes.</p>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="survey-name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="survey-name" name="survey-name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="survey-email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="survey-email" name="survey-email" placeholder="john@example.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age-range">Age Range <span class="required">*</span></label>
+                <select id="age-range" name="age-range" required>
+                    <option value="">-- Select your age range --</option>
+                    <option value="under-18">Under 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65+">65 or older</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Satisfaction <span class="required">*</span></label>
+                <div class="radio-group">
+                    <label class="radio-wrapper">
+                        <input type="radio" name="satisfaction" value="very-satisfied" required>
+                        <span class="radiomark"></span>
+                        😄 Very Satisfied
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="satisfaction" value="satisfied">
+                        <span class="radiomark"></span>
+                        🙂 Satisfied
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="satisfaction" value="neutral">
+                        <span class="radiomark"></span>
+                        😐 Neutral
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="satisfaction" value="dissatisfied">
+                        <span class="radiomark"></span>
+                        🙁 Dissatisfied
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="satisfaction" value="very-dissatisfied">
+                        <span class="radiomark"></span>
+                        😞 Very Dissatisfied
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="recommendation">How likely are you to recommend us to a friend? (1-10) <span
+                        class="required">*</span></label>
+                <input type="range" id="recommendation" name="recommendation" min="1" max="10" value="5" required>
+                <div
+                    style="display: flex; justify-content: space-between; color: var(--text-muted); font-size: 0.85rem; margin-top: 5px;">
+                    <span>1 (Not Likely)</span>
+                    <span>10 (Very Likely)</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Which features do you use most often? <span class="required">*</span></label>
+                <div class="checkbox-group">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-a">
+                        <span class="checkmark"></span>
+                        Product Search & Browse
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-b">
+                        <span class="checkmark"></span>
+                        Customer Support
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-c">
+                        <span class="checkmark"></span>
+                        Mobile App
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-d">
+                        <span class="checkmark"></span>
+                        Online Ordering
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-e">
+                        <span class="checkmark"></span>
+                        Account Management
+                    </label>
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" name="features" value="feature-f">
+                        <span class="checkmark"></span>
+                        Loyalty Program
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="service-quality">Rate our customer service quality (1-5) <span
+                        class="required">*</span></label>
+                <select id="service-quality" name="service-quality" required>
+                    <option value="">-- Select rating --</option>
+                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ Good</option>
+                    <option value="3">⭐⭐⭐ Average</option>
+                    <option value="2">⭐⭐ Below Average</option>
+                    <option value="1">⭐ Poor</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="improvement">What can we improve? <span class="optional">(Optional)</span></label>
+                <textarea id="improvement" name="improvement" placeholder="Share your suggestions for improvement..."
+                    rows="5"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="additional-comments">Additional Comments <span class="optional">(Optional)</span></label>
+                <textarea id="additional-comments" name="additional-comments"
+                    placeholder="Any other feedback you'd like to share..." rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Would you like to participate in future surveys?</label>
+                <div class="radio-group inline">
+                    <label class="radio-wrapper">
+                        <input type="radio" name="future-surveys" value="yes">
+                        <span class="radiomark"></span>
+                        Yes, keep me informed
+                    </label>
+                    <label class="radio-wrapper">
+                        <input type="radio" name="future-surveys" value="no">
+                        <span class="radiomark"></span>
+                        No, thank you
+                    </label>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-success btn-lg">Submit Survey</button>
+                <button type="reset" class="btn btn-outline">Clear Responses</button>
+            </div>
+
+        </form>
+
+        <div class="form-footer">
+            <p>Thank you for taking the time to complete our survey!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
