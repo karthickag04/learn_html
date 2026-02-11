@@ -14,3 +14,6 @@ https://chatgpt.com/share/692d2eee-a63c-800b-87d7-a3f6b9096596
 
 Hover transform effects
 https://chatgpt.com/share/692d2ec9-6798-800b-86db-84d01ca64475
+
+css selectors chat ref
+https://chatgpt.com/share/698c822d-6f40-800b-adc1-6a1aeb76e7c9
